@@ -8,7 +8,7 @@ def apply_discount(price, code):
     return price - price * percent / 100
 
 
-def charge(user_id, amount):
+def charge(user_id, amount, currency):
     if amount < 0:
         print("negative amount")
     resp = requests.post(
